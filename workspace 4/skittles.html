@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+       
+   <style>
+
+@-webkit-keyframes spin {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(360deg); }
+}
+
+@keyframes spin {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(360deg); }
+}
+
+/* Spinning, gradient circle; CSS only! */
+.circle {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	
+	-webkit-animation-name: spin;
+-webkit-animation-duration: 3s;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-timing-function: linear;
+} 
+.yellow {
+    
+  background-image: -webkit-radial-gradient(45px 45px, circle cover, yellow, orange);  
+}
+.green {
+    background-image: -webkit-radial-gradient(45px 45px, circle cover, green, orange);  
+}
+
+.red {
+background-image: -webkit-radial-gradient(45px 45px, circle cover, red, red);  
+}
+.purple{
+    background-image: -webkit-radial-gradient(45px 45px, circle cover, purple, orange);  
+}
+.orange{
+    background-image: -webkit-radial-gradient(45px 45px, circle cover, #f90, #ff8000);  
+}
+    </style>
+    
+    </head>
+    <body>
+
+    <div id="advanced" class="yellow circle"></div>
+    <div id="advanced" class="green circle"></div>
+    <div id="advanced" class="red circle"></div>
+    <div id="advanced" class="purple circle"></div>
+    <div id="advanced" class="orange circle"></div>
+    </body>
+
+</html>
